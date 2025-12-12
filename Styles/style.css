@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans";
+}
+
+section, footer {
+    padding: 5% 10%;
+}
+
+h2 {
+    font-weight: 310;
+}
+
+p {
+    font-weight: 400;
+}
+
+header {
+    background: url(../assets/images/Fondo.png);
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+}
+
+.barra {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 4% 10%;
+    align-items: center;
+}
+
+.barra span {
+    color: #4BCAFF;
+}
+
+.logo {
+    font-size: 0.8rem;
+}
+
+nav {
+    display: flex;
+    gap: 55px;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 510;
+
+}
+
+#active {
+    color: #4BCAFF;
+    border: 3px solid #4BCAFF;
+    padding: 6px 17px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+header h2 {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+.azul {
+    background-color: #4BCAFF;
+}
+
+.caracteristicas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-template-rows: 1fr;
+    gap: 27px;
+    justify-content: center;
+}
+
+.contenedor {
+    color: white;
+    display: grid;
+    gap: 10px;
+}
+
+.contenedor h3 {
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+.contenedor p {
+    font-size: 0.9rem;
+}
+
+.portafolio {
+    display: grid;
+    gap: 50px;
+}
+
+.menu a {
+    color: #69747B;
+    font-weight: 500;
+}
+
+.linea {
+    border: 1px solid #69747B;
+    width: 40px;
+    margin-top: 5px;
+}
+
+.titulo {
+    color: #69747B;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+    gap: 47px;
+}
+
+.imagen {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+}
+
+.imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.video {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    background-color: #515F67;
+    color: white;
+    gap: 40px;
+    align-items: center;
+}
+
+.izquierda {
+    max-width: 460px;
+    display: flex;
+    flex-direction: column;
+}
+
+.izquierda h2 {
+    font-size: 1.5rem;
+    padding-bottom: 5px;
+}
+
+.video .linea {
+    border: 1px solid white;
+    width: 40px;
+    margin-bottom: 30px;
+}
+
+.izquierda p {
+    font-size: 0.8rem;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.secundario {
+    max-width: 450px;
+}
+
+.boton {
+    margin-top: 30px;
+}
+
+.boton a {
+    padding: 10px 40px;
+    border: 3px solid #353F46;
+    text-decoration: none;
+    color: #353F46;
+    font-weight: 700;
+}
+
+.twitter {
+    background: #4BCAFF;
+    color: white;
+}
+
+.contenido {
+    display: flex;
+    justify-content: space-between;
+}
+
+.twitter .linea {
+    border: 1px solid white;
+    width: 40px;
+    margin-top: 5px;
+}
+
+.twitter .titulo {
+    margin-bottom: 20px;
+    color: white; 
+}
+
+.parrafo {
+    max-width: 60%;
+}
+
+.parrafo p {
+    font-weight: 300;
+}
+
+.parrafo span {
+    font-weight: bold;
+}
+
+.acerca {
+    background-image: url(../assets/images/bg_whoIs.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.info {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.acerca .linea {
+    border: 1px solid white;
+    width: 40px;
+    margin-top: 5px;
+}
+
+.acerca .izquierda {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: none;
+}
+
+.acerca .derecha {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.acerca .parrafo {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+}
+
+.acerca .secundario {
+    max-width: 95%;
+}
+
+.acerca .parrafo p {
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+.iconos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 15px));
+    ;
+}
+
+.testimonios {
+    color: #515F67;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 0 auto;
+}
+
+.testimonios .linea {
+    border: 1px solid #515F67;
+    width: 40px;
+    margin-top: 5px;
+}
+
+.testimonios .parrafo P {
+    font-size: 1.4rem;
+    font-weight: 300;
+    max-width: 80%;
+}
+
+.firma small {
+    color: #4BCAFF;
+    font-weight: bold;
+}
+
+.formulario {
+    background: url('../assets/images/bg_contact.png') no-repeat center/cover;
+    color: white;
+}
+
+.estructura {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 70px) 100px;
+    column-gap: 138px;
+    row-gap: 20px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 0.8rem;
+    padding-bottom: 5px;
+}
+
+.detalle p {
+    font-size: 0.8rem;
+}
+
+.estructura input,
+.estructura textarea {
+    width: 100%;
+    height: 100%;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    resize: none;
+}
+
+.contacto button {
+    padding: 15px 15%;
+    background: #4ac9ff;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.detalle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.campo2 {
+    grid-column: 1 / 2;
+}
+
+.detalle1 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.detalle2 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.campo3 {
+    grid-column: 1 / 3;
+    grid-row: 3 / 5;
+}
+
+footer {
+    background: #353F47;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .izquierda {
+    display: flex;
+    gap: 10px;
+    max-width: none;
+}
+
+footer a, footer p {
+    color: #515F67;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+@media (max-width: 1270px) {
+    .video {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 920px) {
+    .barra {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        gap: 15px;
+        font-size: 0.8rem;
+    }
+
+    .video img {
+        max-width: 90%;
+    }
+
+    .estructura {
+        column-gap: 20px;
+    }
+
+    .campo3 {
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+    }
+
+    .detalle1 {
+        grid-column: 1 / 3;
+        grid-row: 3/ 4;
+    }
+
+    .detalle2 {
+        grid-column: 1 / 3;
+        grid-row: 4 / 5;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    footer a, footer p {
+        font-size: 0.6rem;
+    }
+
+    nav {
+        font-size: 0.6rem;
+    }
+
+    .info {
+        flex-direction: column;
+    }
+
+    .iconos {
+        gap: 20px;
+    }
+}
